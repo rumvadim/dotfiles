@@ -1,0 +1,34 @@
+[core]
+	whitespace = trailing-space,space-before-tab,tab-in-indent
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[branch]
+	autosetuprebase = remote
+[log]
+	date = iso
+
+[alias]
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+    lp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --first-parent
+	b = branch -a --column
+	s = status
+	d = diff
+	ds = diff --stat
+	dn = diff --name-only
+	dns = diff --name-status
+	dc = diff --cached
+	dcn = diff --cached --name-only
+	dcns = diff --cached --name-status
+	a = add
+    c = checkout
+    p = pull -p
+    f = fetch -p
+[color]
+	ui = true
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x550+0+49
+	file-view-vpane-position = 18
+	history-view-vpane-position = 902
+	main-window-view = FileView
